@@ -2,10 +2,10 @@
   <div class="wrapper">
     <header>
       <div><img alt="" class="logo" src="../assets/logo.png"/></div>
-      <div>Shapkin</div>
+      <div>SHAPKIN</div>
       <div class="theme">
         <div>Темная тема</div>
-        <RockerSwitch @click="changeTheme"/>
+        <RockerSwitch/>
       </div>
     </header>
 
@@ -20,7 +20,7 @@
               placeholder="Введите задачу"
               type="text"
           />
-          <button class="btn btn-warning rounded-0" @click="submitTask">
+          <button class="btn btn-warning rounded-0 button" @click="submitTask">
             Создать
           </button>
         </div>
@@ -170,27 +170,46 @@ export default {
 </script>
 
 <style scoped>
+.button {
+  background-color: rgba(252, 39, 148, 0.57);
+}
+
+.button:hover {
+  background-color: rgba(129, 2, 66, 0.57);
+}
+
 header {
-  background-color: antiquewhite;
+  font-weight: bold;
+  background-color: rgba(246, 150, 197, 0.57);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.wrapper {
+  background-color: rgba(246, 150, 197, 0.57);
+}
+
+main {
+}
+
 footer {
+  margin-top: 50px;
+  font-weight: bold;
+  background-color: rgba(246, 150, 197, 0.57);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: bisque;
 }
 
 .wrapper {
   margin-right: 10%;
   margin-left: 10%;
+
 }
 
 .logo {
-  width: 40%;
+  width: 30%;
 }
 
 
